@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENTRY | TRI-CENTRA-RISE 2026</title>
+  <meta name="description" content="TRI-CENTRA-RISE 2026 エントリーページ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="header-logo">
+    <span class="header-logo-text">TRI-CENTRA-RISE</span>
+    <span class="header-logo-year">2026</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+  <div class="header-right">
+    <nav>
+      <ul>
+        <li><a href="index.html#program">PROGRAM</a></li>
+        <li><a href="index.html#schedule">SCHEDULE</a></li>
+        <li><a href="index.html#consortium">CONSORTIUM</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <a href="entry.html" class="header-entry">ENTRY</a>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html#program">PROGRAM</a></li>
+    <li><a href="index.html#schedule">SCHEDULE</a></li>
+    <li><a href="index.html#consortium">CONSORTIUM</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="entry.html" class="header-entry">ENTRY</a>
+  </div>
+</div>
+
+<!-- ENTRY -->
+<section class="entry-hero">
+  <div class="entry-hero-inner">
+    <div class="section-heading">
+      <span class="section-heading-en">ENTRY</span>
+      <p class="section-heading-ja">エントリー</p>
+    </div>
+    <div class="entry-prep-box">
+      <p class="entry-prep-label">準備中</p>
+      <p class="entry-prep-text">エントリー受付は ●●●●年●月 開始予定です。<br>詳細が決まり次第、こちらのページでご案内いたします。</p>
+      <a href="index.html" class="entry-back-btn">トップへ戻る</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-info">
+      <h3 class="footer-info-title">INFORMATION</h3>
+      <p class="footer-office-name">TRI-CENTRA-RISEプログラム事務局</p>
+      <p class="footer-office-label">〈 補助事業者 〉株式会社NTTドコモ</p>
+      <p class="footer-office-label">〈 事務局・運営 〉株式会社NTT DXパートナー</p>
+      <p class="footer-office-mail">Mail：<a href="mailto:tri-centra-rise2026@nttdxpn.co.jp">tri-centra-rise2026@nttdxpn.co.jp</a></p>
+    </div>
+    <div class="footer-brand">
+      <p class="footer-brand-text">
+        <span class="footer-brand-en">TRI-CENTRA-RISE</span>
+        <span class="footer-brand-sub">東海イノベーション・プログラム 2026</span>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-akatsuki-logo">
+      <img src="assets/images/akatsuki_logotype.png" alt="AKATSUKIプロジェクト" class="footer-akatsuki-img">
+    </p>
+    <p class="footer-note">本事業は、経済産業省 令和7年度 地方の若手人材発掘育成支援事業費補助金「AKATSUKIプロジェクト」採択事業です。</p>
+    <p class="footer-akatsuki-link">「AKATSUKIプロジェクト」の詳細は<a href="https://mitouteki.jp/" target="_blank" rel="noopener">こちら</a>から</p>
+  </div>
+</footer>
+
+<script>
+var toggle = document.getElementById('navToggle');
+var mobileNav = document.getElementById('mobileNav');
+toggle.addEventListener('click', function() {
+  toggle.classList.toggle('open');
+  mobileNav.classList.toggle('open');
+});
+mobileNav.querySelectorAll('a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    toggle.classList.remove('open');
+    mobileNav.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
